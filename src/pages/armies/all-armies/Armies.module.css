@@ -1,0 +1,22 @@
+.armies-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.armies-container > * {
+  margin: 1rem;
+}
+
+.armies-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.armies-button {
+  margin: 0 1rem;
+}

@@ -1,0 +1,7 @@
+.image {
+  width: 20rem;
+}
+
+.list > * {
+  margin: 1rem 0;
+}

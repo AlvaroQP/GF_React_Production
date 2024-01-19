@@ -1,0 +1,38 @@
+.container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem 0;
+  border-bottom: 1px solid #bcbcbc;
+  background-color: #e9e8e8;
+}
+
+.round-number-base {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  margin-left: 1rem;
+  padding: 0.7rem;
+  border-radius: 0.25rem;
+  min-width: 5rem;
+  font-weight: 500;
+}
+
+.round-number {
+  background-color: #5a5a5a;
+}
+
+.round-number-4 {
+  background-color: #ca0a0a;
+}
+
+.buttons-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 2rem;
+}

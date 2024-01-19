@@ -1,0 +1,14 @@
+.movement-and-coherency {
+  margin-left: 1rem;
+  font-style: italic;
+}
+
+.buttons-container.buttons-container > * {
+  margin: 0 0.5rem;
+}
+
+.multiple-ranged-weapons,
+.remember-aircraft {
+  margin-left: 1rem;
+  font-style: italic;
+}

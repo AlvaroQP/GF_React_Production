@@ -1,0 +1,17 @@
+.form {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 10px 40px 20px;
+  background-color: rgb(14 27 54);
+  border-radius: 10px;
+}
+
+.form-title {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 20px;
+}

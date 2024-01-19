@@ -1,0 +1,13 @@
+.buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons-container.buttons-container > * {
+  margin: 0 0.5rem;
+}
+
+.title {
+  text-align: center;
+}

@@ -1,0 +1,7 @@
+.stepper-container {
+  margin-top: 2rem;
+}
+
+.buttons-container.buttons-container > * {
+  margin: 0 0.5rem;
+}

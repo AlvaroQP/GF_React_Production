@@ -1,0 +1,12 @@
+.movement-and-coherency {
+  margin-left: 1rem;
+  font-style: italic;
+}
+
+.buttons-container.buttons-container > * {
+  margin: 0 0.5rem;
+}
+
+.strike-back-p {
+  color: rgb(205, 3, 3);
+}

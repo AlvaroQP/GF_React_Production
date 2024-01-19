@@ -1,0 +1,18 @@
+.edit-delete-container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.edit-delete-container > * {
+  margin-left: 0.5rem;
+}
+
+.edit-tooltip:hover {
+  color: rgb(38, 148, 38);
+}
+
+.delete-tooltip:hover {
+  color: rgb(218, 36, 36);
+}
