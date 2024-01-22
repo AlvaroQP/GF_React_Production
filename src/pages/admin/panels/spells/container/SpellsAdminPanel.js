@@ -76,7 +76,7 @@ export default function SpellsAdminPanel() {
               .filter((spell) => spell.army.id === army.id)
               .map(({ id, name, description, ...rest }) => ({
                 id,
-                name,
+                spell: name,
                 description,
                 ...rest,
               }));

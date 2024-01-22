@@ -34,7 +34,7 @@ export default function CustomTable({
       return typeof row[header] === "string"
         ? row[header].charAt(0).toUpperCase() + row[header].slice(1)
         : row[header].name;
-    } else if (spellTable && header === "name") {
+    } else if (spellTable && header === "spell") {
       return `${row[header]}(${row["value"]})`;
     } else {
       return row[header];
