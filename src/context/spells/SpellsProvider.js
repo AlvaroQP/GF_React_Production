@@ -33,7 +33,14 @@ export function SpellProvider({ children }) {
   }
 
   async function getByArmyId(id) {
-    return getSpellsByArmyId(id);
+    const spells = await getSpellsByArmyId(id);
+    return spells.sort((a, b) => {
+      if (a.value !== b.value) {
+        return a.value - b.value;
+      } else {
+        return a.name.localeCompare(b.name);
+      }
+    });
   }
 
   async function createSpell(spell) {
