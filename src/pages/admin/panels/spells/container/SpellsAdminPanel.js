@@ -72,9 +72,14 @@ export default function SpellsAdminPanel() {
       <CustomScrollableTabs
         tabs={[
           ...armies.map((army) => {
-            const armySpells = spells.filter(
-              (spell) => spell.army.id === army.id
-            );
+            const armySpells = spells
+              .filter((spell) => spell.army.id === army.id)
+              .map(({ id, name, description, ...rest }) => ({
+                id,
+                name,
+                description,
+                ...rest,
+              }));
 
             return {
               id: army.id,
@@ -83,7 +88,7 @@ export default function SpellsAdminPanel() {
                 armySpells.length > 0 ? (
                   <CustomTable
                     rows={armySpells}
-                    filterHeaders={["id", "idArmy", "value"]}
+                    filterHeaders={["id", "army", "value"]}
                     onEdit={(row) => handleOpenDialog("editSpell", row)}
                     onDelete={(row) => handleOpenDialog("deleteSpell", row)}
                     adminTable={true}
