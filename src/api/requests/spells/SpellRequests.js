@@ -31,7 +31,7 @@ export async function getSpellById(id) {
 export async function getSpellsByArmyId(id) {
   const spellsQuery = query(
     collection(db, spellsCollection),
-    where("idArmy", "==", id)
+    where("army.id", "==", id)
   );
   const querySnapshot = await getDocs(spellsQuery);
   return querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
