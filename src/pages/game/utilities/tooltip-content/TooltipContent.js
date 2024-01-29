@@ -168,8 +168,8 @@ export const entrenched = {
   title: "Entrenched",
   content: (
     <p>
-      Enemies get -2 to hit when shooting at this model from over 12'' away, as
-      long as it hasn't moved since the beginning of its last activation.
+      Enemies get -2 to hit when shooting at this model from over 9'' away, as
+      long as it hasn’t moved since the beginning of its last activation.
     </p>
   ),
 };
@@ -178,7 +178,7 @@ export const explode = {
   title: "Explode(X)",
   content: (
     <p>
-      If this model is ever 1'' away from an enemy unit, it is immediately
+      If this model is ever 1" away from an enemy unit, it is immediately
       killed, and the enemy takes X*2 hits. This model automatically passes all
       morale tests.
     </p>
@@ -310,7 +310,12 @@ export const hunter = {
 
 export const impact = {
   title: "Impact(X)",
-  content: <p>Gets X attacks that hit on 2+ when charging.</p>,
+  content: (
+    <p>
+      Roll X dice when attacking after charging (may not be fatigued), for each
+      2+ the target takes one hit.
+    </p>
+  ),
 };
 
 export const indirect = {
@@ -340,6 +345,11 @@ export const immobile = {
 export const lance = {
   title: "Lance",
   content: <p>Gets AP(+2) when charging.</p>,
+};
+
+export const limited = {
+  title: "Limited",
+  content: <p>May only be used once.</p>,
 };
 
 export const lockOn = {
@@ -411,12 +421,22 @@ export const noRetreat = {
   ),
 };
 
+export const protectedBS = {
+  title: "Protected",
+  content: (
+    <p>
+      Attacks targeting units where all models have this rule count as having
+      AP(-1), to a min. of AP(0).
+    </p>
+  ),
+};
+
 export const poison = {
   title: "Poison",
   content: (
     <p>
-      Targets get -1 to Regeneration rolls, and must re-roll unmodified Defense
-      rolls of 6 when blocking hits.
+      Wounds can't be regenerated, and must re-roll unmodified Defense rolls of
+      6 when blocking hits.
     </p>
   ),
 };
@@ -426,7 +446,7 @@ export const psyBarrier = {
   content: (
     <p>
       When taking a wound, roll one die, and on a 6+ it is ignored. If the wound
-      was from a spell, then it is ignored on a 4+ instead.
+      was from a spell, then it is ignored on a 2+ instead.
     </p>
   ),
 };
@@ -436,12 +456,9 @@ export const psychicPsynapse = {
   content: (
     <>
       <p>
-        Pick one model in this unit to count as having Caster(1), which gets +1
-        spell token per other model with this rule in its unit each round.
-      </p>
-      <p>
-        If the model is killed, pick another model in the unit to become the
-        next caster.
+        This model counts as having Caster(1). All models with this rule in a
+        unit share spell tokens, but can’t hold more than 6 tokens at once in
+        total, and only one of them may cast spells each round.
       </p>
     </>
   ),
@@ -486,8 +503,8 @@ export const rending = {
   title: "Rending",
   content: (
     <p>
-      Targets get -1 to Regeneration rolls, and unmodified results of 6 to hit
-      count as having AP(4).
+      Wounds can't be regenerated, and unmodified results of 6 to hit count as
+      having AP(4).
     </p>
   ),
 };
@@ -497,7 +514,7 @@ export const resistance = {
   content: (
     <p>
       When taking a wound, roll one die, and on a 6+ it is ignored. If the wound
-      was from a spell, then it is ignored on a 4+ instead.
+      was from a spell, then it is ignored on a 2+ instead.
     </p>
   ),
 };
@@ -561,7 +578,9 @@ export const shaken = {
 export const shieldWall = {
   title: "Shield Wall",
   content: (
-    <p>This model gets +1 to defense rolls against non-spell attacks.</p>
+    <p>
+      This model gets +1 to defense rolls against hits that are not from spells.
+    </p>
   ),
 };
 
@@ -654,7 +673,7 @@ export const stealth = {
   content: (
     <p>
       Enemies get -1 to hit rolls when shooting at units where all models have
-      this rule from over 12" away.
+      this rule from over 9" away.
     </p>
   ),
 };

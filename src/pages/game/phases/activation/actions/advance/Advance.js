@@ -37,7 +37,9 @@ import {
   multipleRangedWeapons,
   noRetreat,
   indirect,
+  limited,
   lockOn,
+  protectedBS,
   poison,
   psyBarrier,
   reanimator,
@@ -233,6 +235,7 @@ export default function Advance({ handleEndActivation }) {
                   <CustomTooltip keyword={blast} /> |{" "}
                   <CustomTooltip keyword={deadly} /> |{" "}
                   <CustomTooltip keyword={indirect} /> |{" "}
+                  <CustomTooltip keyword={limited} /> |{" "}
                   <CustomTooltip keyword={lockOn} /> |{" "}
                   <CustomTooltip keyword={poison} /> |{" "}
                   <CustomTooltip keyword={reliable} /> |{" "}
@@ -272,6 +275,7 @@ export default function Advance({ handleEndActivation }) {
                     <CustomTooltip keyword={celestialInfantry} /> |{" "}
                     <CustomTooltip keyword={devout} /> |{" "}
                     <CustomTooltip keyword={highlyDevout} /> |{" "}
+                    <CustomTooltip keyword={protectedBS} /> |{" "}
                     <CustomTooltip keyword={shieldWall} /> |{" "}
                     <CustomTooltip keyword={spiritualGuidance} />
                   </p>
@@ -373,7 +377,7 @@ export default function Advance({ handleEndActivation }) {
             <ul>
               <li>
                 <CustomTooltip keyword={regeneration} />{" "}
-                <em>(check keywords that modify regeneration).</em>
+                <em>(check keywords that ignore regeneration).</em>
               </li>
 
               {(playerA.army.name === "Alien Hives" ||

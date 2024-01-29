@@ -30,12 +30,14 @@ import {
   impact,
   inhibitorDrone,
   lance,
+  limited,
   magma,
   medicalTraining,
   movementAndCoherency,
   meleeAttacks,
   meleeResolution,
   noRetreat,
+  protectedBS,
   poison,
   psyBarrier,
   reanimator,
@@ -213,6 +215,7 @@ export default function Charge({ handleEndActivation }) {
                   <CustomTooltip keyword={furious} /> |{" "}
                   <CustomTooltip keyword={impact} /> |{" "}
                   <CustomTooltip keyword={lance} /> |{" "}
+                  <CustomTooltip keyword={limited} /> |{" "}
                   <CustomTooltip keyword={poison} /> |{" "}
                   <CustomTooltip keyword={reliable} /> |{" "}
                   <CustomTooltip keyword={rending} />
@@ -250,6 +253,7 @@ export default function Charge({ handleEndActivation }) {
                     <strong>Blessed Sisters: </strong>
                     <CustomTooltip keyword={celestialInfantry} /> |{" "}
                     <CustomTooltip keyword={frenzy} /> |{" "}
+                    <CustomTooltip keyword={protectedBS} /> |{" "}
                     <CustomTooltip keyword={shieldWall} /> |{" "}
                     <CustomTooltip keyword={warHymns} />
                   </p>
