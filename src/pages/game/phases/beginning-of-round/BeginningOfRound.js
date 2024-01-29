@@ -110,7 +110,7 @@ export default function BeginningOfRound() {
           {(playerA.army.name === "Dwarf Guilds" ||
             playerB.army.name === "Dwarf Guilds") && (
             <p>
-              <strong>Dwarf Guilds:</strong> Units with {""}
+              <strong>Dwarf Guilds (Rounds 2+):</strong> Units with {""}
               <CustomTooltip keyword={tunneller} />.
             </p>
           )}
@@ -118,7 +118,7 @@ export default function BeginningOfRound() {
           {(playerA.army.name === "Robot Legions" ||
             playerB.army.name === "Robot Legions") && (
             <p>
-              <strong>Robot Legions:</strong> Units with {""}
+              <strong>Robot Legions (Rounds 2+):</strong> Units with {""}
               <CustomTooltip keyword={hunter} /> |{" "}
               <CustomTooltip keyword={shadowProtocol} /> |{" "}
               <CustomTooltip keyword={tunneller} /> |{" "}

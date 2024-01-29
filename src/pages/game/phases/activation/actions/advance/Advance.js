@@ -53,7 +53,9 @@ import {
   rollToHit,
   royalMarch,
   royalMarchOrder,
+  selfRepair,
   shaken,
+  shieldDrone,
   shieldWall,
   shootingAndSpellsMoraleTest,
   shootingAtAircraft,
@@ -289,6 +291,7 @@ export default function Advance({ handleEndActivation }) {
                     <strong>DAO Union: </strong>
                     <CustomTooltip keyword={acceleratorDrone} /> |{" "}
                     <CustomTooltip keyword={goodShot} /> |{" "}
+                    <CustomTooltip keyword={shieldDrone} /> |{" "}
                     <CustomTooltip keyword={shieldWall} /> |{" "}
                     <CustomTooltip keyword={spottingLaser} /> |{" "}
                     <CustomTooltip keyword={stealthDrone} /> |{" "}
@@ -438,7 +441,8 @@ export default function Advance({ handleEndActivation }) {
                     <strong>Robot Legions: </strong>
                     <CustomTooltip keyword={gloomProtocol} /> |{" "}
                     <CustomTooltip keyword={reanimator} /> |{" "}
-                    <CustomTooltip keyword={regenProtocol} />
+                    <CustomTooltip keyword={regenProtocol} /> |{" "}
+                    <CustomTooltip keyword={selfRepair} />
                   </p>
                 </li>
               )}

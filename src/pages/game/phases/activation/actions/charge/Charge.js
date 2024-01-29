@@ -51,6 +51,7 @@ import {
   rollToHit,
   royalMarch,
   royalMarchOrder,
+  selfRepair,
   shaken,
   shieldWall,
   slayer,
@@ -406,7 +407,8 @@ export default function Charge({ handleEndActivation }) {
                     <strong>Robot Legions: </strong>
                     <CustomTooltip keyword={gloomProtocol} /> |{" "}
                     <CustomTooltip keyword={reanimator} /> |{" "}
-                    <CustomTooltip keyword={regenProtocol} />
+                    <CustomTooltip keyword={regenProtocol} /> |{" "}
+                    <CustomTooltip keyword={selfRepair} />
                   </p>
                 </li>
               )}

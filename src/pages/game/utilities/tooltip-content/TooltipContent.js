@@ -361,7 +361,12 @@ export const lockOn = {
 
 export const magma = {
   title: "Magma",
-  content: <p>Hits from this weapon ignore Regeneration.</p>,
+  content: (
+    <p>
+      Hits from this weapon ignore Regeneration, and enemies take one additional
+      wound for each unmodified defense result of 1 that they roll.
+    </p>
+  ),
 };
 
 export const medicalTraining = {
@@ -468,8 +473,8 @@ export const reanimator = {
   title: "Reanimator",
   content: (
     <p>
-      Once per activation, pick one friendly unit within 12'', which gets +1 to
-      Regeneration rolls next time it takes wounds.
+      Once per activation, pick 2 friendly units within 6'', which get
+      Regeneration next time they take wounds.
     </p>
   ),
 };
@@ -481,7 +486,7 @@ export const regeneration = {
 
 export const regenProtocol = {
   title: "Regen-Protocol",
-  content: <p>This model and its unit get +1 to Regeneration rolls.</p>,
+  content: <p>This model and its unit get Regeneration.</p>,
 };
 
 export const reliable = {
@@ -560,6 +565,11 @@ export const royalMarchOrder = {
   ),
 };
 
+export const selfRepair = {
+  title: "Self-Repair",
+  content: <p>When taking a wound, roll one die. On a 6+ it is ignored.</p>,
+};
+
 export const shadowProtocol = {
   title: "Shadow-Protocol",
   content: <p>This model and its unit get Ambush.</p>,
@@ -573,6 +583,11 @@ export const shaken = {
       idle.
     </p>
   ),
+};
+
+export const shieldDrone = {
+  title: "Shield Drone",
+  content: <p>This model and its unit get Stealth.</p>,
 };
 
 export const shieldWall = {
@@ -795,7 +810,7 @@ export const warningCry = {
   title: "Warning Cry",
   content: (
     <p>
-      Enemy units can’t be set up within 12” of this model when using Ambush.
+      Enemy units can't be set up within 12'' of this model when using Ambush.
     </p>
   ),
 };

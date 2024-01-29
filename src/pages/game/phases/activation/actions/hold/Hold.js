@@ -45,7 +45,9 @@ import {
   robot,
   rollToBlock,
   rollToHit,
+  selfRepair,
   shaken,
+  shieldDrone,
   shieldWall,
   shootingAndSpellsMoraleTest,
   shootingAtAircraft,
@@ -208,6 +210,7 @@ export default function Hold({ handleEndActivation }) {
                     <strong>DAO Union: </strong>
                     <CustomTooltip keyword={acceleratorDrone} /> |{" "}
                     <CustomTooltip keyword={goodShot} /> |{" "}
+                    <CustomTooltip keyword={shieldDrone} /> |{" "}
                     <CustomTooltip keyword={shieldWall} /> |{" "}
                     <CustomTooltip keyword={spottingLaser} /> |{" "}
                     <CustomTooltip keyword={stealthDrone} /> |{" "}
@@ -357,7 +360,8 @@ export default function Hold({ handleEndActivation }) {
                     <strong>Robot Legions: </strong>
                     <CustomTooltip keyword={gloomProtocol} /> |{" "}
                     <CustomTooltip keyword={reanimator} /> |{" "}
-                    <CustomTooltip keyword={regenProtocol} />
+                    <CustomTooltip keyword={regenProtocol} /> |{" "}
+                    <CustomTooltip keyword={selfRepair} />
                   </p>
                 </li>
               )}
